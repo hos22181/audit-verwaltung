@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1 >Audit Verwaltung</h1>
+
+    <button style="margin-bottom: 20px;">Neuen Audit erstellen</button>
+
+    <header style="margin-left: 400px;">
+        <h1 style="font-size: 20px;">Filtern nach:</h1>
+        <button>Audit-Nr</button>
+        <button>Lead-Auditee</button>
+        <button>Lead-Auditor</button>
+        <button>Erstellt am</button>
+        <button>Bis</button>
+    </header>
+
+    <table id="dataTable"> <!-- Änderung hier: ID auf 'dataTable' geändert -->
+        <tr>
+            <th>Audit-Nr</th>
+            <th>Lead-Auditee</th>
+            <th>Lead-Auditor</th>
+            <th>Erstellt am</th>
+            <th>Bis</th>
+        </tr>
+
+    </table>
+
+    <header>
+        <button onclick="loadMoreData()" class="loadMoreData">Mehr laden</button>
+    </header>
+
+</body>
+
+</html>
